@@ -18,7 +18,53 @@
             line-height: 1.6;
             font-size: 20px;
         }
-        
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>soliel's personal site</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .bg-section {
+            width: 100vw;
+            height: 50vh;
+            background-size: cover;
+            background-position: center;
+        }
+        .bg1 {
+            background-image: url('images/AM.jpg');
+        }
+        .bg2 {
+            background-image: url('images/CLOUD.jpg');
+        }
+        /* Optional: Make the content over the backgrounds readable */
+        .content-over-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            pointer-events: none; /* so backgrounds can be clicked */
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-section bg1"></div>
+    <div class="bg-section bg2"></div>
+    <!-- Your site content can go here if you want it to overlay -->
+    <!-- <div class="content-over-bg">
+        <h1>Your Content Here</h1>
+    </div> -->
+</body>
+</html>
         .blink {
             animation: blink-animation 1s steps(2, start) infinite;
         }
